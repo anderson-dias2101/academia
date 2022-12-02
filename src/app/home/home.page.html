@@ -1,0 +1,41 @@
+<ion-content>
+  <div class="menu">
+  <div class="img">
+    <img src="../../assets/menu.png"  width="45" height="45">
+  </div>
+</div>
+
+  <div class="img2">
+    <img src="../../assets/exercicios.png"  width="150" height="150">
+  </div>
+
+  <div class="title">
+    <h4><u>Academia</u></h4>
+  </div>
+  <div class="activity">
+    <ion-label position="floating">
+      Nova atividade:
+    </ion-label>
+    <ion-input [(ngModel)]="novaAtividade" required maxlength="100"></ion-input>
+  </div>
+
+  <div id="botao">
+    <ion-button name="botao" type="submit" shape="round" (click)="adicionarAtividade()" (click)="novoPeso()">Adicionar
+    </ion-button>
+  </div>
+
+  <div class="activity2">
+    <ion-list>
+      <ion-item-group *ngFor="let atividade of atividades; let casinha = index">
+        <ion-item-sliding (ionSwipe)="apagarAtividade(casinha)">
+          <ion-item>
+            <ion-label>{{ atividade }}</ion-label>
+            <input type="number" [(ngModel)]="peso" placeholder="kg">
+          </ion-item>
+          <ion-item-options side="end">
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-item-group>
+    </ion-list>
+  </div>
+</ion-content>

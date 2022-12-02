@@ -1,0 +1,59 @@
+ion-content {
+  --background: rgb(16, 248, 217);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+ion-list {
+  background-color: #1af337;
+  border-radius: 10px;
+}
+
+ion-input {
+  cursor: pointer;
+  background-color: rgb(12, 243, 193);
+  margin-top: 2%;
+  border-radius: 100px;
+}
+
+ion-label {
+  padding-left: 15%;
+  color: rgb(10, 24, 13);
+}
+
+#botao{
+  margin-top: 10%;
+  text-align: center;
+  min-width: min-content;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50%;
+  color: #0a0324;
+}
+
+.img {
+  margin-left: 10px;
+  padding-top: 6px;
+}
+
+.img2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.activity {
+  margin-top: 10%;
+  padding: 10%;
+}
+
+.menu{
+  background-color: #05abc9;
+}
+ion-button{
+  --background: #05abc9;
+}
+
+.activity2 {  
+  margin-top: 20px;
+}
